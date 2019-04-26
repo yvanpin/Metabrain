@@ -28,4 +28,6 @@ When you release the left button, wait a few seconds to let the software pre seg
 7) It segmentation is good, click save and choose the output directory.
 If it is wrong, close the software and repeat the operations.
 
+8) Note that this version interpolates FLAIR in order to have the same slice thickness than the T1. To change this parameter, look at the code to change the interpolation from « FLAIR to MPR » to « MPR to FLAIR ».
+
 Please cite Yvan PIN (yvanpin@gmail.com for affiliation) as co-author or cite works published on the subject by Yvan PIN
