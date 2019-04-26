@@ -1,0 +1,31 @@
+##########################################
+USER MANUAL FOR METABRAIN segmentation software.
+May 26, 2019
+Yvan PIN
+
+If questions, please do not hesitate to send me an email : yvanpin@gmail.com
+
+
+###########################################
+
+1)When saving for the first time the result of a segmentation, METABRAIN will create a CSV file where data will be appended at each saving.
+
+2)This version create .npy files containing a segmentation matrix (1=edema, 0=other) for each edema segmented.
+To work the software properly, please create an empty folder called « npy » in the folder you will save the data (inside the folder where the CSV will be created).
+
+3)Input required is a list of dicom files containing a T1 (best in MPR) and a FLAIR sequence. The file containing RT structure set has to be in the same directory and its name has to start with « RTS » and have the extension « .dcm » .
+
+4)To charge files of a patient, click « Open patient … », select the directory containing the files of the patient and click « open ». 1 patient = 1 directory.
+
+Indicate first the MPR (or T1) by one click on the first list, then make the same in the second list for the FLAIR.
+Wait until MRI slices are displayed.
+
+5) To modify the pre segmentation mask windowing : click and slide SLOWLY (up-down, left-right)
+When you release the left button, wait a few seconds to let the software pre segment the entire exam.
+
+6) When ok, click « Launch segmentation ». Scroll a little bit down and wait colored segmentation appears.
+
+7) It segmentation is good, click save and choose the output directory.
+If it is wrong, close the software and repeat the operations.
+
+Please cite Yvan PIN (yvanpin@gmail.com for affiliation) as co-author or cite works published on the subject by Yvan PIN
